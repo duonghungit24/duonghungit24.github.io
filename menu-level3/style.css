@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100%;
+    background-image: url(https://anhdepfree.com/wp-content/uploads/2020/04/hinh-nen-4k-thien-nhien.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-nav {
+    width: 100%;
+    background-color: #297413;
+    margin: 0 auto;
+}
+.menu__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu__icon {
+    margin-right: 8px;
+}
+.menu__item {
+    position: relative;
+    flex-basis: 15%;
+}
+.menu__link {
+   display: block;
+   color: white;
+   text-decoration: none;
+   font-size: 14px;
+   padding: 10px 20px;
+   text-align: center;
+}
+.menu__link:hover {
+    background-color: #96CF3C;
+    color: rebeccapurple;
+}
+/* sub menu */
+.sub__menu {
+    position: absolute;
+    width: 100%;
+    background-color: #297413;
+    list-style: none;
+}
+.menu__sub-item {
+    display: none;
+    position: relative;
+    text-align: center;
+}
+.menu__sub-link {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-top: 1px solid white;
+    color: white;
+}
+.menu__sub-link:hover {
+    background-color:#96CF3C;
+    color: rebeccapurple;
+}
+.menu__item:hover .menu__sub-item {
+    display: block;
+}
+/* menu cấp 3 */
+.sub__menu-child {
+    display: none;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    background-color: #297413;
+    top: 0;
+    left:100.5%;
+}
+.menu__sub-child-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+    padding: 10px;
+}
+.menu__sub-child-link:hover {
+    background-color:#96CF3C;
+    color: rebeccapurple;
+}
+.menu__sub-item:hover .sub__menu-child {
+    display: block;
+} 
