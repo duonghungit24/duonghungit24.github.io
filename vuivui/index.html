@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="continue">
+        <h1>ẤN VÔ ĐÂY ĐI</h1>
+        <button>Start</button>
+    </div>
+    <script>
+        var Clickk = document.querySelector('button');
+        Clickk.onclick = function () {
+            var name = window.prompt("Nhập tên vào đi cậu: ");
+            var sdt = window.prompt("Sđt bạn là: ");
+            var sum = Clickk.innerHTML = "<img src='https://i.pinimg.com/originals/6f/67/5f/6f675f720d8e3e67cc7b250557ccbf5d.gif'  width='100%' ; height=600px'>";
+            document.write(sum);
+            document.writeln("<------------------------Your Information---------------><hr/>" );
+            document.writeln("<-------------------------" + name + "----------------------><hr/>");
+            document.writeln("<-------------------------" + sdt +  "----------------------><hr/>");
+            var output = Clickk.innerHTML = "<h1>Đồng ý làm người yêu Hiệp nha <br/><button id='btn'>OK ạ</button></h1>";
+            document.write(output);
+            var cssH1 = document.querySelector('h1');
+            Object.assign(cssH1.style, {
+                margin: '10px',
+                color: 'red',
+                textAlign: 'center',
+                padding: '5px',
+                border: '1px solid pink',
+                borderRadius: '10px',
+            })
+            var btn = document.querySelector('#btn');
+            btn.innerHTML = "<img src='https://i.pinimg.com/originals/dc/b9/6f/dcb96f174bb3e9615a4f7d5e9e161f14.gif' width='100px'height='100px'>"
+        }
+    </script>
+</body>
+
+</html>
