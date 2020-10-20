@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Happy women's Day</title>
+</head>
+
+<body>
+    <div class="form">
+        <h2>Đăng Nhập Tại Đây nè</h2>
+        <div class="box">
+            <input class="input-name" type="text" placeholder="Nhập Họ vào đây nhe.">
+        </div>
+        <div class="box">
+            <input class="input-age" type="text" placeholder="Nhập tên vào đây nè!">
+        </div>
+        <button class= "btn" onclick="changeWebsite()">Đăng Nhập</button>
+         
+    </div>
+    <script>
+         function changeWebsite(){
+             var valueInput1 = document.querySelector('.input-name').value;
+             var value1 = valueInput1.toUpperCase();
+             var valueInput2 = document.querySelector('.input-age').value;
+             var value2 = valueInput2.toUpperCase();
+             var addElement = document.querySelector('body');
+             var afterAdd = addElement.innerHTML = "<div><h1> Chúc " + value1 + " "+ value2 + " có ngày 20/10 nhiều niềm vui và ý nghĩa nhé hihi</h1></div>";
+             document.write(afterAdd);
+             var addOut = document.querySelector('div');
+             Object.assign(addOut.style, {
+                 borderStyle:'solid',
+                 borderColor:'red',
+                 borderRadius:'5px',
+                 color:'red',
+                 backgroundColor :'#FCC974',
+             })
+             var textStyle = document.querySelector('h1');
+             Object.assign(textStyle.style,{
+                 textAlign:'center',
+             })
+             var addLink = addElement.innerHTML = '<div><button><a href="https://duonghungit24.github.io/happywomen/index.html">Nhấn vào đây tiếp nè</a></button></div>';
+             document.write(addLink);
+             var buttonStyle = document.querySelector('button');
+             Object.assign(buttonStyle.style,{
+                 display:'block',
+                 margin:'10px auto',
+                 backgroundColor:'#fcc947',
+                 padding:'5px',
+                 borderRadius:'5px',
+                 borderColor:'red',
+                 borderStyle:'solid',
+             })
+             var linkStyle = document.querySelector('a');
+             Object.assign(linkStyle.style,{
+                 color:'red',
+                 textDecoration:'none',
+             })
+            var addImage = addElement.innerHTML = '<img src="https://media4.giphy.com/media/Y3HTF8WdRpEFIu3FA8/source.gif" width=100% alt="ảnh chuyển động"> '
+            document.write(addImage);
+         }
+    </script>
+</body>
+
+</html>
