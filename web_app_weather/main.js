@@ -13,7 +13,7 @@ const wind = document.querySelector('.wind');
 
 
 search.addEventListener('change',(e) => {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&lang=vi&appid=${api}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&lang=vi&appid=${api}&units=metric`)
         .then(response => {
             return response.json();
         })
