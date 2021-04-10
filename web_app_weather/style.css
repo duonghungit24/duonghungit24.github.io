@@ -25,9 +25,33 @@
     left: 0;
 }
 .voice {
+    cursor: pointer;
     position: absolute;
     right: 0;
     font-size: 13px;
+    bottom: 5px;
+}
+.microphone .point {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: quay 1.5s infinite linear;
+}
+@keyframes quay {
+    0% {
+        box-shadow: 0 0 3px 0 rgb(228, 112, 112);
+    }
+    65% {
+        box-shadow: 0 0 3px 5px rgb(218, 48, 48);
+    }
+    100% {
+        box-shadow: 0 0 3px 5px rgb(107, 19, 19);
+    }
 }
 .search {
     outline: none;
@@ -62,9 +86,17 @@
     display: flex;
     justify-content: space-around;
     border-top: 1px solid white;  
+    padding: 30px;
+    font-size: 18px;
 }
 .row{
     margin: 20px 0 ;
+}
+.label {
+    padding: 5px;
+}
+.value {
+    padding: 5px;
 }
 .item {
     line-height: 25px;
