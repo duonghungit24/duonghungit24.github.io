@@ -26,7 +26,6 @@ search.addEventListener('change',(e) => {
             wind.innerHTML = data.wind.speed;
         })
 })
-
 //
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 const recogniton = new SpeechRecognition();
@@ -45,8 +44,6 @@ const speakNow= (text) => {
     const newspeech = new SpeechSynthesisUtterance(text);
     synth.speak(newspeech);
 }
-
-
 const handlevoice = text => {
     console.log('text' ,text);
     const handleText =  text.toLowerCase();
@@ -78,14 +75,12 @@ const handlevoice = text => {
 
    speakNow('Try Again');
 }
-
 voice.addEventListener('click' , e => {
     e.preventDefault();
     recogniton.start();
     voice.style.display = 'none';
     point.style.display = 'block';
 })
-
 recogniton.onspeechend = () => {
     recogniton.stop();
     voice.style.display = 'block';
