@@ -9,6 +9,7 @@ const sunset = document.querySelector('.end');
 const humidity = document.querySelector('.humidity');
 const wind = document.querySelector('.wind');
 
+
 search.addEventListener('change',(e) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&lang=vi&appid=${api}&units=metric`)
         .then(response => {
@@ -26,7 +27,7 @@ search.addEventListener('change',(e) => {
             wind.innerHTML = data.wind.speed;
         })
 })
-//
+
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 const recogniton = new SpeechRecognition();
 recogniton.lang = 'vi-VI'; // set ngôn ngữ
